@@ -1,28 +1,41 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <span>
+    <Header />
+    <Carousel />
+    <RestaurantDisplay />
+    <Menu/>
+  </span>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Carousel from "./components/Carousel.vue";
+import Header from "./components/Header.vue";
+import RestaurantDisplay from './components/RestaurantDisplay.vue'
+import Menu from "./components/Catalog.vue"
+
 
 export default {
-  name: 'App',
+  name: "App",
+
   components: {
-    HelloWorld
-  }
-}
+    Header,
+    Carousel,
+    RestaurantDisplay,
+     Menu,
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body {
+  background-color: gray;
+}
+
+.goldenBorder{
+    border-bottom: 1px solid gold;
+        margin:auto;
+    text-align: center; 
+    width: 75px;
+    height: 10px;
 }
 </style>

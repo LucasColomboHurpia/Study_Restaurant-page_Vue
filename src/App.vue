@@ -3,7 +3,8 @@
     <Header />
     <Carousel />
     <RestaurantDisplay />
-    <Menu/>
+    <Catalog/>
+    <ContactForm/>
   </span>
 </template>
 
@@ -11,7 +12,8 @@
 import Carousel from "./components/Carousel.vue";
 import Header from "./components/Header.vue";
 import RestaurantDisplay from './components/RestaurantDisplay.vue'
-import Menu from "./components/Catalog.vue"
+import Catalog from "./components/Catalog.vue"
+import ContactForm from "./components/Contactform.vue"
 
 
 export default {
@@ -21,8 +23,10 @@ export default {
     Header,
     Carousel,
     RestaurantDisplay,
-     Menu,
+    Catalog,
+    ContactForm,
   },
+  
 };
 </script>
 

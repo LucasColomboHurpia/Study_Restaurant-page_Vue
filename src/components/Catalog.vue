@@ -8,53 +8,32 @@
       <div class="d-flex justify-content-start catalogOpt">
 
         <div
-          :class="[
-            activetab === 0
-              ? 'catalogOption activeTabCatalog'
-              : 'catalogOption nonActiveTabCatalog']"
-          @click="toggleActiveTab(0)"
-        >
+          :class="[activetab === 0 ? 'catalogOption activeTabCatalog' : 'catalogOption nonActiveTabCatalog']"
+          @click="toggleActiveTab(0)">
           Pizza
         </div>
 
         <div
-          :class="[
-            activetab === 1
-              ? 'catalogOption activeTabCatalog'
-              : 'catalogOption nonActiveTabCatalog']"
-          @click="toggleActiveTab(1)"
-        >
+          :class="[activetab === 1 ? 'catalogOption activeTabCatalog' : 'catalogOption nonActiveTabCatalog']"
+          @click="toggleActiveTab(1)">
           Burguers
         </div>
 
         <div
-          :class="[
-            activetab === 2
-              ? 'catalogOption activeTabCatalog'
-              : 'catalogOption nonActiveTabCatalog']"
-          @click="toggleActiveTab(2)"
-        >
+          :class="[activetab === 2 ? 'catalogOption activeTabCatalog' : 'catalogOption nonActiveTabCatalog']"
+          @click="toggleActiveTab(2)">
           Salads
         </div>
 
         <div
-          :class="[
-            activetab === 3
-              ? 'catalogOption activeTabCatalog'
-              : 'catalogOption nonActiveTabCatalog']"
-          @click="toggleActiveTab(3)"
-        >
+          :class="[activetab === 3 ? 'catalogOption activeTabCatalog' : 'catalogOption nonActiveTabCatalog']"
+          @click="toggleActiveTab(3)">
           Beverages
         </div>
 
         <div
-          :class="[
-            activetab === 4
-              ? 'catalogOption activeTabCatalog'
-              : 'catalogOption nonActiveTabCatalog',
-          ]"
-          @click="toggleActiveTab(4)"
-        >
+          :class="[activetab === 4 ? 'catalogOption activeTabCatalog' : 'catalogOption nonActiveTabCatalog']"
+          @click="toggleActiveTab(4)">
           Desserts
         </div>
 
@@ -62,9 +41,9 @@
  <!--  v-show? -->
       <div class="d-flex">
         <div class="catalogContainer">
-          
+
             <!--activeTab = 0-->
-            <PizzaCatalog :activetab="activetab" />
+           <PizzaCatalog :activetab="activetab" />
             <!--activeTab = 1-->
            <BurguerCatalog :activetab="activetab" />
             <!--activeTab = 2-->
@@ -81,14 +60,14 @@
 </template>
 
 <script>
-import PizzaCatalog from "./Catalog/Pizza/Pizza.vue";
+import PizzaCatalog from "./Catalog/Pizza/Pizza.vue"
 import BurguerCatalog from "./Catalog/Hamburguer/Hamburguers.vue"
 import SaladCatalog from "./Catalog/Salads/Salads.vue"
 import BeverageCatalog from "./Catalog/Beverages/Beverages.vue"
 import DessertCatalog from "./Catalog/Dessert/Desserts.vue"
 
 export default {
-  name: "MenuV",
+  name: "Catalog",
 
   components: {
     PizzaCatalog,

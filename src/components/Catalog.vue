@@ -6,46 +6,47 @@
     </div>
     <div class="container mb-5">
       <div class="d-flex justify-content-start catalogOpt">
+
         <div
           :class="[
             activetab === 0
               ? 'catalogOption activeTabCatalog'
-              : 'catalogOption nonActiveTabCatalog',
-          ]"
+              : 'catalogOption nonActiveTabCatalog']"
           @click="toggleActiveTab(0)"
         >
           Pizza
         </div>
+
         <div
           :class="[
             activetab === 1
               ? 'catalogOption activeTabCatalog'
-              : 'catalogOption nonActiveTabCatalog',
-          ]"
+              : 'catalogOption nonActiveTabCatalog']"
           @click="toggleActiveTab(1)"
         >
           Burguers
         </div>
+
         <div
           :class="[
             activetab === 2
               ? 'catalogOption activeTabCatalog'
-              : 'catalogOption nonActiveTabCatalog',
-          ]"
+              : 'catalogOption nonActiveTabCatalog']"
           @click="toggleActiveTab(2)"
         >
           Salads
         </div>
+
         <div
           :class="[
             activetab === 3
               ? 'catalogOption activeTabCatalog'
-              : 'catalogOption nonActiveTabCatalog',
-          ]"
+              : 'catalogOption nonActiveTabCatalog']"
           @click="toggleActiveTab(3)"
         >
           Beverages
         </div>
+
         <div
           :class="[
             activetab === 4
@@ -56,90 +57,23 @@
         >
           Desserts
         </div>
-      </div>
 
+      </div>
+ <!--  v-show? -->
       <div class="d-flex">
         <div class="catalogContainer">
-          <div :class="[activetab === 0 ? 'show' : 'hide']">
-            <div class="catalogItem">
-              <div class="catalogImage"></div>
-              <div class="nameOfItem">CONTENT CATALOG HERE 0</div>
-              <div class="description">
-                lrem ipsolum lorem opsopls slorem ipslusm splorem lotem
-              </div>
-              <div class="price">$$ 99.99</div>
-            </div>
-            <div class="catalogItem">
-              <div class="catalogImage"></div>
-              <div class="nameOfItem">CONTENT CATALOG HERE 0</div>
-              <div class="description">
-                lrem ipsolum lorem opsopls slorem ipslusm splorem lotem
-              </div>
-              <div class="price">$$ 99.99</div>
-            </div>
-            <div class="catalogItem">
-              <div class="catalogImage"></div>
-              <div class="nameOfItem">CONTENT CATALOG HERE 0</div>
-              <div class="description">
-                lrem ipsolum lorem opsopls slorem ipslusm splorem lotem
-              </div>
-              <div class="price">$$ 99.99</div>
-            </div>
-            <div class="catalogItem">
-              <div class="catalogImage"></div>
-              <div class="nameOfItem">CONTENT CATALOG HERE 0</div>
-              <div class="description">
-                lrem ipsolum lorem opsopls slorem ipslusm splorem lotem
-              </div>
-              <div class="price">$$ 99.99</div>
-            </div>
-            <div class="catalogItem">
-              <div class="catalogImage"></div>
-              <div class="nameOfItem">CONTENT CATALOG HERE 0</div>
-              <div class="description">
-                lrem ipsolum lorem opsopls slorem ipslusm splorem lotem
-              </div>
-              <div class="price">$$ 99.99</div>
-            </div>
-            <div class="catalogItem">
-              <div class="catalogImage"></div>
-              <div class="nameOfItem">CONTENT CATALOG HERE 0</div>
-              <div class="description">
-                lrem ipsolum lorem opsopls slorem ipslusm splorem lotem
-              </div>
-              <div class="price">$$ 99.99</div>
-            </div>
-            <div class="catalogItem">
-              <div class="catalogImage"></div>
-              <div class="nameOfItem">CONTENT CATALOG HERE 0</div>
-              <div class="description">
-                lrem ipsolum lorem opsopls slorem ipslusm splorem lotem
-              </div>
-              <div class="price">$$ 99.99</div>
-            </div>
-            <div class="catalogItem">
-              <div class="catalogImage"></div>
-              <div class="nameOfItem">CONTENT CATALOG HERE 0</div>
-              <div class="description">
-                lrem ipsolum lorem opsopls slorem ipslusm splorem lotem
-              </div>
-              <div class="price">$$ 99.99</div>
-            </div>
-          </div>
+          
+            <!--activeTab = 0-->
+            <PizzaCatalog :activetab="activetab" />
+            <!--activeTab = 1-->
+           <BurguerCatalog :activetab="activetab" />
+            <!--activeTab = 2-->
+           <SaladCatalog :activetab="activetab" />
+            <!--activeTab = 3-->
+           <BeverageCatalog :activetab="activetab" />
+            <!--activeTab = 4-->
+           <DessertCatalog :activetab="activetab" />
 
-          <div :class="[activetab === 1 ? 'show' : 'hide']">
-            CONTENT CATALOG HERE 1
-          </div>
-
-          <div :class="[activetab === 2 ? 'show' : 'hide']">
-            CONTENT CATALOG HERE 2
-          </div>
-          <div :class="[activetab === 3 ? 'show' : 'hide']">
-            CONTENT CATALOG HERE 3
-          </div>
-          <div :class="[activetab === 4 ? 'show' : 'hide']">
-            CONTENT CATALOG HERE 4
-          </div>
         </div>
       </div>
     </div>
@@ -147,10 +81,22 @@
 </template>
 
 <script>
+import PizzaCatalog from "./Catalog/Pizza/Pizza.vue";
+import BurguerCatalog from "./Catalog/Hamburguer/Hamburguers.vue"
+import SaladCatalog from "./Catalog/Salads/Salads.vue"
+import BeverageCatalog from "./Catalog/Beverages/Beverages.vue"
+import DessertCatalog from "./Catalog/Dessert/Desserts.vue"
+
 export default {
   name: "MenuV",
 
-  components: {},
+  components: {
+    PizzaCatalog,
+    BurguerCatalog,
+    SaladCatalog,
+    BeverageCatalog,
+    DessertCatalog,
+  },
 
   data() {
     return {

@@ -74,13 +74,24 @@ margin-bottom: 10px;
 .catalogImage{
   width: 120px;
   height: 120px;
-  background: rgb(113, 113, 145);
-  -moz-border-radius: 50%;
+   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
 
   margin: auto;
 }
+
+.DEVcatalogImage{
+  width: 120px;
+  height: 120px;
+  background-color: rgb(125, 70, 177);
+   -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+
+  margin: auto;
+}
+
 .nameOfItem{
   margin: auto;
 

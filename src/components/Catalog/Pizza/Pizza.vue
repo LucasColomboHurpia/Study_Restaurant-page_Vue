@@ -31,5 +31,5 @@ export default {
 </script>
 
 <style scoped>
-@import url("../../Styles/menu.css");
+@import url("../../Styles/catalog.css");
 </style>

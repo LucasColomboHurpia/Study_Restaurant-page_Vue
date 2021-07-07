@@ -31,5 +31,9 @@ export default {
 </script>
 
 <style scoped>
-@import url("../../Styles/menu.css");
+@import url("../../Styles/catalog.css");
+.img-fluid{
+  max-width: 100%;
+  height: auto;
+}
 </style>

@@ -1,61 +1,60 @@
-import catupiry from "../../../assets/Food/Pizza/Catupiry.png"
-import American from "../../../assets/Food/Pizza/American.png"
-import HouseSpecial from "../../../assets/Food/Pizza/HouseSpecial.png"
-import Italian from "../../../assets/Food/Pizza/Italian.png"
-import Peperonni from "../../../assets/Food/Pizza/PepperoniOnions.png"
-import double from "../../../assets/Food/Pizza/Combo2x1.png" 
-import shrooms from "../../../assets/Food/Pizza/shroom.png"
-import cheesetomatoes from "../../../assets/Food/Pizza/TomatosAndcheese.png"
-
+import drinkBlueberry from "../../../assets/Food/Beverages/blueberry.png"
+import doubleDrink from "../../../assets/Food/Beverages/doubleDrink.png"
+import lemoncoke from "../../../assets/Food/Beverages/lemonCoke.png"
+import limeDrink from "../../../assets/Food/Beverages/lime.png"
+import NaturalDrink from "../../../assets/Food/Beverages/NaturalDrink.png"
+import pureLemon from "../../../assets/Food/Beverages/pureLemon.png"
+import drinkStrawberry from "../../../assets/Food/Beverages/strawbeery.png"
+import redDrink from "../../../assets/Food/Beverages/redDrink.png"
 
 const beverages = [
     {
-        image: catupiry,
-        name: 'Catupiry',
-        description: 'Delicious Pizza made with Catupiry, suculent chicken and love!',
-        price:' $58.99',
+        image: drinkBlueberry,
+        name: 'Blueberry',
+        description: '',
+        price:' $8.99',
+    }, 
+    {
+        image: doubleDrink,
+        name: 'Two for One',
+        description: '',
+        price:'$16.99',
     },
     {
-        image: American,
-        name: 'American',
-        description: 'Incredible recipe from one of the most famous chefs in America!',
-        price:'$58.99',
+        image: lemoncoke,
+        name: 'Coke',
+        description: '',
+        price:'$7.50',
     },
     {
-        image: HouseSpecial,
-        name: 'House Special',
-        description: 'Our proud special recipe, everything you could ever want in a pizza!',
-        price:'$65.99',
+        image: limeDrink,
+        name: 'Lime',
+        description: '',
+        price:'$9.99',
     },
     {
-        image: Italian,
-        name: 'Italian',
-        description: 'Marvelous Italian cheese and tomatoes, crispy crust and low price!',
-        price:'$47.99',
+        image: NaturalDrink,
+        name: 'Natural',
+        description: '',
+        price:'$10.50',
     },
     {
-        image: Peperonni,
-        name: 'Pepperoni',
-        description: 'The classic Pepperoni with delicious onions, garanteed crowd pleaser!',
-        price:'$62.99',
+        image: pureLemon,
+        name: 'Lemon',
+        description: '',
+        price:'$8.99',
     },
     {
-        image: double,
-        name: 'Two for One combo',
-        description: 'Two incredible pizzas made with love! Only the best for the whole family!',
-        price:'$62.99',
+        image: drinkStrawberry,
+        name: 'Strawberry',
+        description: '',
+        price:'$12.99',
     },
     {
-        image: shrooms,
-        name: 'Mushrooms',
-        description: 'Amazing Cheese, tomatoes, European mooshrooms and more',
-        price:'$62.99',
-    },
-    {
-        image: cheesetomatoes,
-        name: 'Cheese and tomatoes',
-        description: 'Wonderful tomatoes slices covered in the best cheese can offer!',
-        price:'$62.99',
+        image: redDrink,
+        name: 'Red fruits',
+        description: '',
+        price:'$8.99',
     },
     
 ]

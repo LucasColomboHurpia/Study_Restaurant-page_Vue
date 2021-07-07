@@ -5,7 +5,8 @@
     <RestaurantDisplay />
     <Catalog/>
     <ContactForm/>
-  </span>
+<!--     <Gallery/>
+ -->  </span>
 </template>
 
 <script>
@@ -14,8 +15,8 @@ import Header from "./components/Header.vue";
 import RestaurantDisplay from './components/RestaurantDisplay.vue'
 import Catalog from "./components/Catalog.vue"
 import ContactForm from "./components/Contactform.vue"
-
-
+/* import Gallery from "./components/Gallery.vue"
+ */
 export default {
   name: "App",
 
@@ -25,6 +26,7 @@ export default {
     RestaurantDisplay,
     Catalog,
     ContactForm,
+/*     Gallery */
   },
   
 };

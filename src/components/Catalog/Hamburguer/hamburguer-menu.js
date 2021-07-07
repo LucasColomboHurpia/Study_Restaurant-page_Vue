@@ -1,63 +1,60 @@
-
-import catupiry from "../../../assets/Food/Pizza/Catupiry.png"
-import American from "../../../assets/Food/Pizza/American.png"
-import HouseSpecial from "../../../assets/Food/Pizza/HouseSpecial.png"
-import Italian from "../../../assets/Food/Pizza/Italian.png"
-import Peperonni from "../../../assets/Food/Pizza/PepperoniOnions.png"
-import double from "../../../assets/Food/Pizza/Combo2x1.png" 
-import shrooms from "../../../assets/Food/Pizza/shroom.png"
-import cheesetomatoes from "../../../assets/Food/Pizza/TomatosAndcheese.png"
-
-
+import Barbecue from "../../../assets/Food/Burguer/BarbecueBurguer.png"
+import CheddarSpecial from "../../../assets/Food/Burguer//CheddarSpecial.png"
+import comboFries from "../../../assets/Food/Burguer/comboFries.png"
+import DoubleBurguer from "../../../assets/Food/Burguer/DoubleBurguer.png"
+import extraBacon from "../../../assets/Food/Burguer/extraBacon.png"
+import twoforone from "../../../assets/Food/Burguer/twoforOne.png"
+import VeganBurguer from "../../../assets/Food/Burguer/VeganBurguer.png"
+import xBacon from "../../../assets/Food/Burguer/Xbacon.png"
 
 const burguers = [
     {
-        image: catupiry,
-        name: 'Catupiry',
-        description: 'Delicious Pizza made with Catupiry, suculent chicken and love!',
-        price:' $58.99',
+        image: Barbecue,
+        name: 'Barbecue Special',
+        description: 'Two floors of pure deliciousness with layers of barbecue!',
+        price:' $38.99',
     },
     {
-        image: American,
+        image: CheddarSpecial,
         name: 'American',
-        description: 'Incredible recipe from one of the most famous chef in America!',
-        price:'$58.99',
+        description: 'The best cheddar a burguer can offer! Strips of onions and lots of bacon!',
+        price:'$30.99',
     },
     {
-        image: HouseSpecial,
-        name: 'House Special',
-        description: 'Our proud special recipe, everything you could ever want in a pizza!',
-        price:'$65.99',
+        image: comboFries,
+        name: 'Burguer+Fries combo',
+        description: 'Incredible combo! A burguer accompanied of fries and one refreshing drink!',
+        price:'$52.99',
     },
     {
-        image: Italian,
-        name: 'Italian',
-        description: 'Marvelous Italian cheese and tomatoes, crispy crust and low price!',
-        price:'$47.99',
+        image: DoubleBurguer,
+        name: 'Double burguer',
+        description: 'TWO floors of massive burguers! The best meal of the week!',
+        price:'$40.99',
     },
     {
-        image: Peperonni,
-        name: 'Pepperoni',
-        description: 'The classic Pepperoni with delicious onions, garanteed crowd pleaser!',
-        price:'$62.99',
+        image: extraBacon,
+        name: 'Bacon Colossus',
+        description: 'Our biggest burguer! Tons of bacon on top of our largest burguers!',
+        price:'$43.50',
     },
     {
-        image: double,
+        image: twoforone,
         name: 'Two for One combo',
-        description: 'Two incredible pizzas for the price of one!',
-        price:'$62.99',
+        description: 'Two incredible burguers for the price of one!',
+        price:'$55.50',
     },
     {
-        image: shrooms,
-        name: 'mooshrooms',
-        description: 'Amazing Cheese, tomatoes, European mooshrooms and more',
-        price:'$62.99',
+        image: VeganBurguer,
+        name: 'Vegan Delight',
+        description: '100% Vegan burguer. The healthiest option for the lowest price!',
+        price:'$38.00',
     },
     {
-        image: cheesetomatoes,
-        name: 'Cheese and tomatoes',
-        description: 'Wonderful tomatoes slices covered in cheese!',
-        price:'$62.99',
+        image: xBacon,
+        name: 'Le Burguer',
+        description: 'A lighter option for your kids! Topped with Cheddar and Bacon!',
+        price:'$32.99',
     },
     
 ]

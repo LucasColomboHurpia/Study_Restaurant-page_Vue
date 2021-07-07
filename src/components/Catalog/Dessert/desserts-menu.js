@@ -1,61 +1,61 @@
-import catupiry from "../../../assets/Food/Pizza/Catupiry.png"
-import American from "../../../assets/Food/Pizza/American.png"
-import HouseSpecial from "../../../assets/Food/Pizza/HouseSpecial.png"
-import Italian from "../../../assets/Food/Pizza/Italian.png"
-import Peperonni from "../../../assets/Food/Pizza/PepperoniOnions.png"
-import double from "../../../assets/Food/Pizza/Combo2x1.png" 
-import shrooms from "../../../assets/Food/Pizza/shroom.png"
-import cheesetomatoes from "../../../assets/Food/Pizza/TomatosAndcheese.png"
+import BlkBerrydessert from "../../../assets/Food/Desserts/blackberry.png"
+import chocoCake from "../../../assets/Food/Desserts/chocoCake.png"
+import cookie from "../../../assets/Food/Desserts/cookie.png"
+import iceCream from "../../../assets/Food/Desserts/iceCream.png"
+import specialCake from "../../../assets/Food/Desserts/specialCake.png"
+import strawberryCake from "../../../assets/Food/Desserts/strawberryCake.png"
+import SweetCakePlus from "../../../assets/Food/Desserts/SweetCakePlus.png"
+import sweetCombo from "../../../assets/Food/Desserts/sweetCombo.png"
 
 
 const desserts = [
     {
-        image: catupiry,
-        name: 'Catupiry',
-        description: 'Delicious Pizza made with Catupiry, suculent chicken and love!',
-        price:' $58.99',
+        image: BlkBerrydessert,
+        name: 'Cupcakes',
+        description: 'Incredible cupcakes!',
+        price:' $18.99',
     },
     {
-        image: American,
-        name: 'American',
+        image: chocoCake,
+        name: 'Chocolate Cake',
         description: 'Incredible recipe from one of the most famous chefs in America!',
-        price:'$58.99',
+        price:'$15.99',
     },
     {
-        image: HouseSpecial,
-        name: 'House Special',
-        description: 'Our proud special recipe, everything you could ever want in a pizza!',
-        price:'$65.99',
+        image: cookie,
+        name: 'Cookies',
+        description: 'Housemade cookies with drops of chocolate',
+        price:'$4.99',
     },
     {
-        image: Italian,
-        name: 'Italian',
-        description: 'Marvelous Italian cheese and tomatoes, crispy crust and low price!',
-        price:'$47.99',
+        image: iceCream,
+        name: 'Ice Cream',
+        description: 'Delicious frozen sweets!',
+        price:'$12.50',
     },
     {
-        image: Peperonni,
-        name: 'Pepperoni',
-        description: 'The classic Pepperoni with delicious onions, garanteed crowd pleaser!',
-        price:'$62.99',
+        image: specialCake,
+        name: 'Special Cake',
+        description: 'The best cake in town! Marvelous black and white chocolate!',
+        price:'$20.00',
     },
     {
-        image: double,
-        name: 'Two for One combo',
-        description: 'Two incredible pizzas made with love! Only the best for the whole family!',
-        price:'$62.99',
+        image: strawberryCake,
+        name: 'Strawberry Cake',
+        description: 'Wonderful strawberry and blaberry cake!',
+        price:'$12.99',
     },
     {
-        image: shrooms,
-        name: 'Mushrooms',
-        description: 'Amazing Cheese, tomatoes, European mooshrooms and more',
-        price:'$62.99',
+        image: SweetCakePlus,
+        name: 'Sweet Cake PLUS',
+        description: 'Party-sized sweet with chocolate and strawberry!',
+        price:'$13.50',
     },
     {
-        image: cheesetomatoes,
-        name: 'Cheese and tomatoes',
-        description: 'Wonderful tomatoes slices covered in the best cheese can offer!',
-        price:'$62.99',
+        image: sweetCombo,
+        name: 'Mega Sweet Combo',
+        description: 'MASSIVE combo of sweet treats! Chocolate, ice-crem, strawbrry and MORE!',
+        price:'$32.99',
     },
     
 ]

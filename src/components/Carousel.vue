@@ -11,79 +11,71 @@
       background="#ababab"
       img-width="1024"
       img-height="425"
-      style="text-shadow: 1px 1px 2px #333;"
+      style="text-shadow: 1px 1px 2px #333"
       @sliding-start="onSlideStart"
       @sliding-end="onSlideEnd"
     >
       <!-- Text slides with image -->
-      <b-carousel-slide caption="Blank Image" img-blank img-alt="Blank image">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros felis, tincidunt
-          a tincidunt eget, convallis vel est. Ut pellentesque ut lacus vel interdum.
-        </p>
-      </b-carousel-slide>
-
-      <!-- Slides with custom text -->
-      <b-carousel-slide caption="Blank Image" img-blank img-alt="Blank image">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros felis, tincidunt
-          a tincidunt eget, convallis vel est. Ut pellentesque ut lacus vel interdum.
-        </p>
-      </b-carousel-slide>
-
-      <!-- Slides with image only -->
-      <b-carousel-slide caption="Blank Image" img-blank img-alt="Blank image">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros felis, tincidunt
-          a tincidunt eget, convallis vel est. Ut pellentesque ut lacus vel interdum.
-        </p>
-      </b-carousel-slide>
-
-      <!-- Slide with blank fluid image to maintain slide aspect ratio -->
-      <b-carousel-slide caption="Blank Image" img-blank img-alt="Blank image">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros felis, tincidunt
-          a tincidunt eget, convallis vel est. Ut pellentesque ut lacus vel interdum.
-        </p>
-      </b-carousel-slide>
+      <b-carousel-slide
+        v-for="item in carouselItems"
+        :key="item.id"
+        :caption="item.text"
+        :img-src="item.image"
+      ></b-carousel-slide>
     </b-carousel>
   </div>
 </template>
 
 <script>
+import slide1 from "../assets/SliderCarousel/slide1txt.jpg";
+import slide2 from "../assets/SliderCarousel/slide2txt.jpg";
+import slide3 from "../assets/SliderCarousel/slide3txt.jpg";
+
 export default {
+  name: "Carousel",
 
-  name: 'Carousel',
+  components: {},
 
-  components: {
+  data() {
+    return {
+      slide: 0,
+      sliding: null,
 
+      carouselItems: [
+        {
+          id: 1,
+          image: slide2,
+          text: "",
+        },
+        {
+          id: 2,
+          image: slide1,
+          text: "",
+        },
+        {
+          id: 3,
+          image: slide3,
+          text: "",
+        },
+      ],
+    };
   },
 
-   data() {
-      return {
-        slide: 0,
-        sliding: null
-      }
+  methods: {
+    onSlideStart() {
+      this.sliding = true;
     },
-
-    methods: {
-      onSlideStart() {
-        this.sliding = true
-      },
-      onSlideEnd() {
-        this.sliding = false
-      }
-    }
+    onSlideEnd() {
+      this.sliding = false;
+    },
+  },
 
   /* created() { }, */
 
-
-//https://bootstrap-vue.org/docs/components/carousel
-}
-
+  //https://bootstrap-vue.org/docs/components/carousel
+};
 </script>
 
 <style scoped>
-
 </style>
 

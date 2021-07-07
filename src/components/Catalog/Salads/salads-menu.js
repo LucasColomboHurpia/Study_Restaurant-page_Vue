@@ -1,61 +1,60 @@
-import catupiry from "../../../assets/Food/Pizza/Catupiry.png"
-import American from "../../../assets/Food/Pizza/American.png"
-import HouseSpecial from "../../../assets/Food/Pizza/HouseSpecial.png"
-import Italian from "../../../assets/Food/Pizza/Italian.png"
-import Peperonni from "../../../assets/Food/Pizza/PepperoniOnions.png"
-import double from "../../../assets/Food/Pizza/Combo2x1.png" 
-import shrooms from "../../../assets/Food/Pizza/shroom.png"
-import cheesetomatoes from "../../../assets/Food/Pizza/TomatosAndcheese.png"
-
+import appleSalad from "../../../assets/Food/Salads/appleSalad.png"
+import beetrootSalad from "../../../assets/Food/Salads/beetrootSalad.png"
+import fishSalad from "../../../assets/Food/Salads/fishSalad.png"
+import SaladChicken from "../../../assets/Food/Salads/SaladChicken.png"
+import Saladflower from "../../../assets/Food/Salads/SaladFlower.png"
+import SaladPortion from "../../../assets/Food/Salads/saladPortion.png"
+import SaladSpecial from "../../../assets/Food/Salads/Saladspecial.png"
+import saladWithSauce from "../../../assets/Food/Salads/SaladWithSauce.png"
 
 const salads = [
     {
-        image: catupiry,
-        name: 'Catupiry',
-        description: 'Delicious Pizza made with Catupiry, suculent chicken and love!',
-        price:' $58.99',
+        image: appleSalad,
+        name: 'Apple Salad',
+        description: 'Delicious and Healthy salad with a portion of apples',
+        price:' $25.99',
     },
     {
-        image: American,
-        name: 'American',
-        description: 'Incredible recipe from one of the most famous chefs in America!',
-        price:'$58.99',
+        image: beetrootSalad,
+        name: 'Beetroot Salad',
+        description: 'The sweetness of beetroot within a salad portion!',
+        price:'$26.99',
     },
     {
-        image: HouseSpecial,
-        name: 'House Special',
-        description: 'Our proud special recipe, everything you could ever want in a pizza!',
-        price:'$65.99',
+        image: fishSalad,
+        name: 'Fishy Salad',
+        description: 'Succulent salad with strips of italian fishes!',
+        price:'$25.99',
     },
     {
-        image: Italian,
-        name: 'Italian',
-        description: 'Marvelous Italian cheese and tomatoes, crispy crust and low price!',
-        price:'$47.99',
+        image: SaladChicken,
+        name: 'Extra Salad',
+        description: 'Family-sized portion! The healthiest option for the greatest feasts!',
+        price:'$27.50',
     },
     {
-        image: Peperonni,
-        name: 'Pepperoni',
-        description: 'The classic Pepperoni with delicious onions, garanteed crowd pleaser!',
-        price:'$62.99',
+        image: Saladflower,
+        name: 'Salad Lotus',
+        description: 'A gourmet flower-shaped salad, special sauce and seasoning',
+        price:'$32.99',
     },
     {
-        image: double,
-        name: 'Two for One combo',
-        description: 'Two incredible pizzas made with love! Only the best for the whole family!',
-        price:'$62.99',
+        image: SaladPortion,
+        name: 'Tomato Salad',
+        description: 'A salad portion with this the best tomato!',
+        price:'$22.99',
     },
     {
-        image: shrooms,
-        name: 'Mushrooms',
-        description: 'Amazing Cheese, tomatoes, European mooshrooms and more',
-        price:'$62.99',
+        image: SaladSpecial,
+        name: 'Small portion',
+        description: 'A more compact option for a lower, more accessible price',
+        price:'$17.50',
     },
     {
-        image: cheesetomatoes,
-        name: 'Cheese and tomatoes',
-        description: 'Wonderful tomatoes slices covered in the best cheese can offer!',
-        price:'$62.99',
+        image: saladWithSauce,
+        name: 'Special Salad',
+        description: 'Our house special! Amazing salad with chicken cubes and awesome sauce!',
+        price:'$36.00',
     },
     
 ]

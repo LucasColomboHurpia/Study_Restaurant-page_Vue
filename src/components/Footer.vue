@@ -21,7 +21,7 @@
     </mdb-container>
     <div class="footer-copyright text-center py-3 bgfooter">
       <mdb-container fluid>
-         <a href="https://www.MDBootstrap.com"> GitHub Repository </a>
+         <a href=""> GitHub Repository </a>
       </mdb-container>
     </div>
   </div>

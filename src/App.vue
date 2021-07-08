@@ -34,7 +34,7 @@ export default {
 
 <style>
 body {
-  background-color: #4B515D;
+  background-color: white;
 }
 
 .goldenBorder{
